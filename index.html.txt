@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostalji Çay Bahçesi</title>
+    <style>
+        body { font-family: 'Georgia', serif; margin: 0; background: #fdf5e6; color: #5d4037; text-align: center; }
+        .hero { padding: 60px 20px; background: #8d6e63; color: #fff; }
+        .hero h1 { margin: 0; font-size: 2.5em; letter-spacing: 2px; }
+        .menu-section { padding: 40px 20px; }
+        .menu-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .menu-item { background: #fff; padding: 15px; border: 1px solid #d7ccc8; border-radius: 8px; width: 220px; }
+        .menu-item h3 { margin: 0 0 10px 0; color: #3e2723; }
+        .social-btn { display: inline-block; padding: 15px 40px; background: #d84315; color: white; text-decoration: none; border-radius: 30px; margin-top: 30px; font-weight: bold; transition: 0.3s; }
+        .social-btn:hover { background: #bf360c; }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>Nostalji Çay Bahçesi</h1>
+        <p>Geleneksel lezzetler, huzurlu anlar.</p>
+    </div>
+
+    <div class="menu-section">
+        <h2>Menümüz</h2>
+        <div class="menu-container">
+            <div class="menu-item"><h3>Tavşan Kanı Çay</h3><p>15 TL</p></div>
+            <div class="menu-item"><h3>Türk Kahvesi</h3><p>45 TL</p></div>
+            <div class="menu-item"><h3>Taze Limonata</h3><p>40 TL</p></div>
+            <div class="menu-item"><h3>Ev Yapımı Börek</h3><p>60 TL</p></div>
+        </div>
+    </div>
+
+    <a href="https://instagram.com/nostaljicaybahcesi" class="social-btn" target="_blank">Bizi Instagram'da Takip Edin</a>
+
+</body>
+</html>
