@@ -3,70 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nostalji Çay Bahçesi - Menü</title>
+    <title>Nostalji Çay Bahçesi - Gaziantep</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; background: #fdf5e6; color: #3e2723; margin: 0; padding-bottom: 50px; }
-        .hero { background: #8d6e63; color: white; padding: 40px 20px; text-align: center; }
-        .category { margin: 20px; background: white; border-radius: 15px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h2 { border-bottom: 2px solid #d84315; padding-bottom: 5px; color: #d84315; margin-top: 0; }
-        .item { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee; }
-        .item:last-child { border: none; }
+        body { margin: 0; padding: 0; background-color: #0d3b33; font-family: 'Segoe UI', sans-serif; color: #fff; }
+        .hero { text-align: center; padding: 40px 10px; border-bottom: 3px solid #d4af37; }
+        .hero h1 { margin: 0; font-size: 1.8em; color: #d4af37; }
+        .hero p { color: #d4af37; margin: 5px 0 0; }
+        
+        .menu-container { padding: 15px; }
+        .category { background: rgba(255, 255, 255, 0.05); border: 2px solid #d4af37; border-radius: 15px; padding: 15px; margin-bottom: 20px; }
+        .category h2 { color: #d4af37; text-align: center; margin-top: 0; font-size: 1.2em; border-bottom: 1px solid #d4af37; padding-bottom: 10px; }
+        
+        .item { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .price { color: #d4af37; font-weight: bold; }
+        
+        .footer-btns { padding: 20px; display: flex; flex-direction: column; gap: 10px; }
+        .btn { text-align: center; padding: 15px; border-radius: 10px; text-decoration: none; font-weight: bold; color: white; border: 2px solid #d4af37; }
+        .btn-insta { background: #e1306c; }
+        .btn-map { background: #3e2723; }
     </style>
 </head>
 <body>
 
     <div class="hero">
         <h1>Nostalji Çay Bahçesi</h1>
+        <p>Kavaklık, Gaziantep</p>
     </div>
 
-    <!-- İçecekler -->
-    <div class="category">
-        <h2>Sıcak İçecekler</h2>
-        <div class="item"><span>Çay</span><span>35 TL</span></div>
-        <div class="item"><span>Oralet</span><span>35 TL</span></div>
-        <div class="item"><span>Kuşburnu</span><span>35 TL</span></div>
-        <div class="item"><span>Karton Çay</span><span>40 TL</span></div>
+    <div class="menu-container">
+        <!-- Sıcak İçecekler -->
+        <div class="category">
+            <h2>Sıcak İçecekler</h2>
+            <div class="item"><span>Çay</span><span class="price">35 TL</span></div>
+            <div class="item"><span>Oralet</span><span class="price">35 TL</span></div>
+            <div class="item"><span>Kuşburnu</span><span class="price">35 TL</span></div>
+            <div class="item"><span>Karton Çay</span><span class="price">40 TL</span></div>
+        </div>
+
+        <!-- Kahveler -->
+        <div class="category">
+            <h2>Kahveler</h2>
+            <div class="item"><span>Türk Kahvesi</span><span class="price">120 TL</span></div>
+            <div class="item"><span>Espresso</span><span class="price">150 TL</span></div>
+            <div class="item"><span>Filtre Kahve</span><span class="price">190 TL</span></div>
+            <div class="item"><span>Cappucino</span><span class="price">190 TL</span></div>
+            <div class="item"><span>Latte</span><span class="price">200 TL</span></div>
+            <div class="item"><span>Nescafe Gold</span><span class="price">140 TL</span></div>
+        </div>
+
+        <!-- Yiyecekler -->
+        <div class="category">
+            <h2>Yiyecekler & Atıştırmalık</h2>
+            <div class="item"><span>Tost</span><span class="price">250 TL</span></div>
+            <div class="item"><span>Gözleme</span><span class="price">250 TL</span></div>
+            <div class="item"><span>Aperatif Tabak</span><span class="price">320 TL</span></div>
+            <div class="item"><span>Çerez Tabağı</span><span class="price">320 TL</span></div>
+            <div class="item"><span>Antep Fıstığı</span><span class="price">350 TL</span></div>
+        </div>
     </div>
 
-    <div class="category">
-        <h2>Kahveler</h2>
-        <div class="item"><span>Türk Kahvesi</span><span>120 TL</span></div>
-        <div class="item"><span>Espresso</span><span>150 TL</span></div>
-        <div class="item"><span>Filtre Kahve</span><span>190 TL</span></div>
-        <div class="item"><span>Cappucino</span><span>190 TL</span></div>
-        <div class="item"><span>Latte</span><span>200 TL</span></div>
-        <div class="item"><span>Caramel Machiato</span><span>200 TL</span></div>
-        <div class="item"><span>Nescafe Gold (Sütlü)</span><span>140 TL</span></div>
-    </div>
-
-    <div class="category">
-        <h2>Soğuk İçecekler & Buzlu</h2>
-        <div class="item"><span>Soğuk Çaylar</span><span>100 TL</span></div>
-        <div class="item"><span>Meyveli Soda</span><span>60 TL</span></div>
-        <div class="item"><span>Soda</span><span>60 TL</span></div>
-        <div class="item"><span>Churchill</span><span>100 TL</span></div>
-        <div class="item"><span>Soğuk Kahve</span><span>250 TL</span></div>
-        <div class="item"><span>Ice Latte</span><span>250 TL</span></div>
-        <div class="item"><span>Atom</span><span>310 TL</span></div>
-    </div>
-
-    <div class="category">
-        <h2>Yiyecekler & Atıştırmalık</h2>
-        <div class="item"><span>Tost</span><span>250 TL</span></div>
-        <div class="item"><span>Gözleme</span><span>250 TL</span></div>
-        <div class="item"><span>Aperatif Tabak</span><span>320 TL</span></div>
-        <div class="item"><span>Çerez Tabağı</span><span>320 TL</span></div>
-        <div class="item"><span>Antep Fıstığı</span><span>350 TL</span></div>
-    </div>
-
-    <div class="category">
-        <h2>Nargile & İçecek Grubu</h2>
-        <div class="item"><span>Nargile (Meyveli)</span><span>400 TL</span></div>
-        <div class="item"><span>Nargile (Kahveli)</span><span>450 TL</span></div>
-        <div class="item"><span>Pepsi (2.5L)</span><span>75 TL</span></div>
-        <div class="item"><span>Coca Cola (2.5L)</span><span>100 TL</span></div>
-        <div class="item"><span>Sprite (2.5L)</span><span>100 TL</span></div>
-        <div class="item"><span>Sarıyer (2.5L)</span><span>100 TL</span></div>
+    <div class="footer-btns">
+        <a href="https://instagram.com/nostaljicaybahcesi" class="btn btn-insta">Instagram Hesabımız</a>
+        <a href="https://www.google.com/maps/search/Kavaklık+Nostalji+Çay+Bahçesi+Gaziantep" class="btn btn-map">Konum (Gaziantep Kavaklık)</a>
     </div>
 
 </body>
